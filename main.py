@@ -20,3 +20,7 @@ bebidas = [
      'price': 4000,
      'cant': 2.5}
 ]
+
+@app.get('/')
+def home():
+    return {'msg': 'hola'}
