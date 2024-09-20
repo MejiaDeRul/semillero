@@ -24,3 +24,7 @@ bebidas = [
 @app.get('/')
 def home():
     return {'msg': 'hola'}
+
+@app.get('/bebida', tags=['Bebidas'])
+def mostrar_bebidas():
+    return {'bebidas': bebidas}
